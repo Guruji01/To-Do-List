@@ -12,7 +12,7 @@ class item
 
 	createDiv(itemName)
 	{
-		let input = document.createElement('.input');
+		let input = document.createElement('input');
 		input.value = itemName;
 		input.disabled = true;
 		input.classList.add('item_input');
@@ -30,6 +30,7 @@ class item
 		removeButton.innerHTML = "REMOVE";
 		removeButton.classList.add('removeButton');
 		
+        container.appendChild(itemBox);
 
 		itemBox.appendChild(input);
 		itemBox.appendChild(editButton);
@@ -57,9 +58,17 @@ function check()
 	if(input.val != "")
 	{
 		new item(input.value);
-        input.val = "";
+        input.value = "";
 	}
 }
 
 addButton.addEventListener('click',check);
+
+window.addEventListener('keydown',(e) =>
+{
+	if(e.which == 13)
+	{
+		check();
+	}
+})
 
