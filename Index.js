@@ -1,6 +1,6 @@
 
 const addButton = document.querySelector('.addButton');
-var inputValue =   document.querySelector('.input');
+var input =   document.querySelector('.input');
 var container = document.querySelector('.container');
 
 class item
@@ -38,7 +38,8 @@ class item
 
 		editButton.addEventListener('click',() => this.edit(input));
 		removeButton.addEventListener('click',() => this.remove(itemBox));
-
+ 
+ }
         edit(input)
         {
         	input.disabled = !input.disabled;
@@ -50,6 +51,15 @@ class item
         }
 
 	}
+
+function check()
+{
+	if(input.val != "")
+	{
+		new item(input.value);
+        input.val = "";
+	}
 }
 
-new item("Sport");
+addButton.addEventListener('click',check);
+
