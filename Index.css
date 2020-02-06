@@ -97,7 +97,7 @@ h1
 .editButton
 {
    font-size: 1.4rem;
-   margin: 0 0.75rem;
+   margin: 0 0.5rem;
    font-family: 'Hind Siliguri', sans-serif;
    background: none;
    outline: none;
@@ -108,7 +108,7 @@ h1
 .removeButton
 {
    font-size: 1.4rem;
-   margin: 0 0.75rem;
+   margin: 0 0.5rem;
    font-family: 'Hind Siliguri', sans-serif;
    background: none;
    outline: none;
