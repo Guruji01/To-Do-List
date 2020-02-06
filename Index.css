@@ -103,6 +103,7 @@ h1
    outline: none;
    color: lime;
    border: none;	
+   cursor: pointer;
 }
 
 .removeButton
@@ -114,4 +115,5 @@ h1
    outline: none;
    color: #E00;
    border: none;
+   cursor: pointer;
 }
