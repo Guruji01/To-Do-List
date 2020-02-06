@@ -83,3 +83,18 @@ h1
 	margin-bottom: 1.5rem;
 	border-bottom: 4px solid #fff;
 }
+
+.item_input
+{
+	background: none;
+	outline: none;
+	color: #fff;
+	border: none;
+	width: 350px;
+    font-size: 1.4rem;
+}
+
+.editButton
+{
+	
+}
