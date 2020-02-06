@@ -15,6 +15,21 @@ class item
 		let input = document.createElement('.input');
 		input.value = itemName;
 		input.disabled = true;
-		input.classList.add('');
+		input.classList.add('item_input');
+		input.type = "text";
+
+		let itemBox = document.createElement('div');
+		itemBox.classList.add('item');
+
+		let editButton = document.createElement('button')
+		editButton.classList.add('editButton');
+
+		let removeButton = document.createElement('button')
+		removeButton.classList.add('removeButton');
+
+		itemBox.appendChild(input);
+		itemBox.appendChild(editButton);
+		itemBox.appendChild(removeButton);
+
 	}
 }
